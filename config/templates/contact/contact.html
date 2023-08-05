@@ -1,0 +1,31 @@
+{% extends 'common_code/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container ">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form>
+        <h2 class="text-center">Contact Us</h2>
+        <hr>
+        <div class="form-group mb-2">
+          <label for="Name">Name</label>
+          <input type="text" class="form-control" id="Name" aria-describedby="emailHelp" placeholder="Enter your name">
+          
+        </div>
+        <div class="form-group mb-2">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+          
+        </div>
+        <div class="form-group mb-2">
+          <label for="content">Content</label>
+          <textarea class="form-control" id="content" rows="3"></textarea>
+        </div>
+       
+        <div class="text-center"><button type="submit" class="btn btn-primary">Submit</button></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
